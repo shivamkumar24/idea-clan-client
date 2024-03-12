@@ -17,7 +17,12 @@ const Home = () => {
   return (
     <>
       <Box minH={"100vh"}>
-        <Container maxW={"xl"} centerContent boxShadow={"md"}>
+        <Container
+          maxW={"xl"}
+          centerContent
+          boxShadow={"md"}
+          bgColor={"orange"}
+        >
           <Box
             d="flex"
             w="100%"
@@ -32,14 +37,21 @@ const Home = () => {
               textTransform={"uppercase"}
               textAlign={"center"}
             >
-              Learning Platform
+              EduHub Learning Platform
             </Text>
           </Box>
-          <Box w="100%" p={"10px"} borderRadius={"lg"} borderWidth={"1px"}>
+          <Box
+            w="100%"
+            p={"10px"}
+            borderRadius={"lg"}
+            borderWidth={"1px"}
+            bgColor={"white"}
+            mb="12px"
+          >
             <Tabs variant="soft-rounded">
               <TabList mb="1em">
-                <Tab w="50%">Login</Tab>
-                <Tab w="50%">Sign Up</Tab>
+                <Tab w="60%">Login</Tab>
+                <Tab w="60%">Sign Up</Tab>
               </TabList>
               <TabPanels>
                 <TabPanel>

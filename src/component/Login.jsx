@@ -110,6 +110,7 @@ const Login = () => {
         width="100%"
         mt={15}
         isLoading={loading}
+        fontWeight={"bold"}
         onClick={submitHandler}
       >
         Login

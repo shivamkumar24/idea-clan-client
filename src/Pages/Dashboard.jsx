@@ -20,7 +20,7 @@ const Dashboard = () => {
         setCurrentContent(<Lectures />);
         break;
       default:
-        setCurrentContent(null); // Default content or handle other cases
+        setCurrentContent(null);
         break;
     }
   };

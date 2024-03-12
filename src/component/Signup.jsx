@@ -25,11 +25,9 @@ const Signup = () => {
   const [show, setShow] = useState(false);
   const [signupdata, setSignupdata] = useState(signupData);
   const isValidEmail = (email) => {
-    // Regular expression for validating an Email
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
   };
-  // console.log(signupdata, "signupdata");
 
   const handleClick = () => {
     setShow((pre) => !pre);
@@ -168,9 +166,10 @@ const Signup = () => {
       </FormControl>
 
       <Button
+        mt={15}
         color="blue"
         width="100%"
-        mt={15}
+        fontWeight={"bold"}
         onClick={submitHandler}
         isLoading={loading}
       >
